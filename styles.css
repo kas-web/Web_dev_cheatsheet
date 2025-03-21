@@ -1,0 +1,144 @@
+/*General Styles*/
+body{
+    font-family:'calibri';
+    margin: 0;
+    padding: 0;
+    background-color:beige;
+    color:black;
+}
+
+/*Header*/
+header{
+    font-family: 'Times New Roman';
+    text-align: center;
+    padding:20px;
+}
+
+header h1{
+    margin:0;
+    font-size: 2em;
+    color:brown;
+}
+
+/*Navigation*/
+nav{
+    background-color: #333;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+nav ul li{
+    display:inline;
+    margin:0 15px;
+}
+nav a{
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #fff;
+}
+
+/*Main Content*/
+main{
+    padding: 20px;
+    max-width: 800px;
+    margin:auto;
+}
+
+/*Sections*/
+section{
+    background:#fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius:8px;
+}
+
+h2{
+    color: #ffcc00;
+}
+
+/*Code Boxes*/
+.code-box{
+    background: #111;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: monospace;
+    overflow-x: auto;
+}
+
+code{
+    display: block;
+    color: #0f0;
+}
+
+/*Table Styles*/
+table{
+    width: 100%;
+    border-collapse:collapse;
+    margin-top: 10px;
+}
+
+table,th,td{
+    border: 1px solid #fff;
+    padding: 10px;
+    text-align: left;
+}
+.slide img {
+    width: 100%;
+    height: 300px; /* Adjust based on slider height */
+    object-fit: cover;
+}
+/* Slider container */
+.slider {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+/* Slide wrapper */
+.slides {
+    display: flex;
+    width: 400%;
+    animation: slide 12s infinite;
+}
+
+/* Individual slides */
+.slide {
+    width: 100%;
+    transition: transform 1s;
+}
+
+/* Individual slides */
+.slide {
+    width: 100%;
+    transition: transform 1s;
+}
+
+/* Keyframes for auto-sliding */
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(0%); }
+}
+
+
+
+/*Footer*/
+footer{
+    text-align:center;
+    padding:15px;
+    background-color: #222;
+    color:#ffcc00;
+    margin-top:20px;
+}
